@@ -14,6 +14,7 @@ public class Gerente extends Empleado {
 	
 	public Gerente(String nombre, int identificador, double salario, double bono) {
 		super(nombre, identificador, salario);
+		this.bono=bono;
 	}
 	
 	public double getBono() {
@@ -24,6 +25,7 @@ public class Gerente extends Empleado {
 		this.bono = bono;
 	}
 
+	@Override
 	public void mostrarInformacion() {
 		super.mostrarInformacion();
 		System.out.println("Bono: "+this.getBono());

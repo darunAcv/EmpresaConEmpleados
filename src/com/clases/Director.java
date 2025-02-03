@@ -20,7 +20,7 @@ public class Director extends Gerente{
 	public void setAcciones(double acciones) {
 		this.acciones = acciones;
 	}
-	
+	@Override
 
 	public double calculaSalarioTotal() {
 		double salario=super.getSalario();
